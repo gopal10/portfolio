@@ -1,0 +1,137 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background: #161b22;
+  color: #c9d1d9;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+header ul li a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header ul li a:hover {
+  color: #58a6ff;
+}
+
+.section {
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  background: #161b22;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #58a6ff;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #1f6feb;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #161b22;
+  color: #c9d1d9;
+  border-top: 1px solid #21262d;
+}
+.photo {
+  background: #161b22;
+  text-align: center;
+}
+
+.photo-item {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.photo-item img:hover {
+  transform: scale(1.1);
+}
+.section-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.section {
+  padding: 2rem;
+  border-radius: 8px;
+  background: #161b22;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.contact-achievements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-achievements {
+    grid-template-columns: 1fr;
+  }
+}
